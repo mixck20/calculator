@@ -108,7 +108,7 @@ function App() {
           <Key label={"="} clickHandler={equalsClickHandler} />
           <Key label={"+"} clickHandler={opClickHandler} />
           {}
-          <Key label={"Deloria"} clickHandler={() => setDisp("Jordan Micko Deloria")} className="DeloriaButton" />
+          <Key label={"DELORIA"} clickHandler={() => setDisp("Jordan Micko Deloria")} className="DeloriaButton" />
         </div>
       </div>
     </div>
