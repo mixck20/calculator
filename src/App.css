@@ -1,38 +1,78 @@
 .App {
+  box-sizing: border-box;
   text-align: center;
+  min-height: 100vh; 
+  background-color: #af5aab;
+  background-size: cover; 
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Calc {
+  border: 7px solid black;
+  width: 550px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Disp {
+  padding: 5px;
+  border: 5px solid rgb(255, 255, 255);
+  height: 40px;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Display {
+  font-size: 1.5em; 
+  text-align: right;
+  background-color: black;
+  border: 3px solid #4b0082;
   color: white;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
 }
 
-.App-link {
-  color: #61dafb;
+.Buttons {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Buttons > button {
+  flex: 0 1 25%;
+  font-size: 2em;
+  background-color: #4b0082; 
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.Buttons > button:hover {
+  background-color: #6a0dad; 
+}
+
+.Buttons .DeloriaButton {
+  flex: 0 1 100%; 
+  background-color: black;
+  color: #a020f0; 
+  border-radius: 15px;
+  border: 3px solid #4b0082;
+  padding: 15px;
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+.Buttons .DeloriaButton:hover {
+  background-color: #333;
+  color: #dda0dd; 
+}
+
+.Display .name {
+  font-size: 1.5em; 
+  text-align: right;
+  color: white;
 }
